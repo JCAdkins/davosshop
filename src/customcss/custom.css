@@ -342,3 +342,72 @@ button[data-testid="carousel-right-control"] svg:active {
   ||                     END OF MAIN.jsx                       ||
   ++===========================================================++ 
   */
+
+/*
+  ++===========================================================++
+  ||                     Start OF DropDownButton.jsx                       ||
+  ++===========================================================++ 
+  */
+button[data-testid="flowbite-dropdown-target"] {
+  background-color: #0c4a6e;
+}
+/*
+  ++===========================================================++
+  ||                     END OF DropDownButton.jsx                       ||
+  ++===========================================================++ 
+  */
+
+/*
+  ++===========================================================++
+  ||                     Start OF ShopNavBar.jsx                       ||
+  ++===========================================================++ 
+  */
+
+.navbar > div {
+  width: 100vw;
+  margin: 0px;
+}
+
+@media screen and (max-width: 890px) and (min-width: 768px) {
+  .custom-ml {
+    margin-left: -26px;
+  }
+  .custom-mr {
+    margin-right: -60px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 890px) {
+  .custom-ml {
+    margin-left: -52px;
+  }
+
+  .custom-mr {
+    margin-right: -84px;
+  }
+}
+
+@media screen and (max-width: 1124px) and (min-width: 1024px) {
+  .custom-ml {
+    margin-left: -10px;
+  }
+
+  .custom-mr {
+    margin-right: -33px;
+  }
+}
+
+@media screen and (min-width: 1124px) {
+  .custom-ml {
+    margin-left: -52px;
+  }
+
+  .custom-mr {
+    margin-right: -84px;
+  }
+}
+/*
+  ++===========================================================++
+  ||                     END OF ShopNavBar.jsx                       ||
+  ++===========================================================++ 
+  */

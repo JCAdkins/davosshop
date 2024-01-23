@@ -1,0 +1,151 @@
+{
+  "products": ["11110", "11111", "11112", "11113", "11114"],
+
+  "product": {
+    "1": {
+      "name": "deodorant_spray_coconut",
+      "id": 11110,
+      "images": [
+        "https://www.mojavemyst.com/cdn/shop/products/4-1-ProductPurchase-PHOTOS_1200x.jpg?v=1632249914",
+        "https://www.mojavemyst.com/cdn/shop/products/4-2-ProductPurchase-PHOTOS_1200x.jpg?v=1632249979",
+        "https://www.mojavemyst.com/cdn/shop/products/4-3-ProductPurchase-PHOTOS_1200x.jpg?v=1632250051",
+        "https://www.mojavemyst.com/cdn/shop/products/4-4-ProductPurchase-PHOTOS_1200x.jpg?v=1632250079",
+        "https://www.mojavemyst.com/cdn/shop/products/4-5-ProductPurchase-PHOTOS_1200x.jpg?v=1632250105",
+        "https://www.mojavemyst.com/cdn/shop/products/4-7-ProductPurchase-PHOTOS_1200x.jpg?v=1632250133",
+        "https://www.mojavemyst.com/cdn/shop/products/4-8-ProductPurchase-PHOTOS_1200x.jpg?v=1632250157",
+        "https://www.mojavemyst.com/cdn/shop/products/4-9-ProductPurchase-PHOTOS_1200x.jpg?v=1632250192",
+        "https://www.mojavemyst.com/cdn/shop/products/4-10-ProductPurchase-PHOTOS_1200x.jpg?v=1632250239",
+        "https://www.mojavemyst.com/cdn/shop/products/4-11-ProductPurchase-PHOTOS_1200x.jpg?v=1632250259",
+        "https://www.mojavemyst.com/cdn/shop/products/4-6-ProductPurchase-PHOTOS_1200x.jpg?v=1632250273",
+        "https://www.mojavemyst.com/cdn/shop/products/4-12-ProductPurchase-PHOTOS_1200x.jpg?v=1630608478"
+      ],
+
+      "details": {
+        "description": "Mojave Myst is a fine mist spray deodorant that delivers multi-day body odor protection you can trust. Formulated in the Mojave Desert, one of the hottest, extreme and beautiful environments on earth.  Mojave Myst’s trademark ODOR CANCELLING TECHNOLOGY is a patent-pending deodorant that effectively neutralizes body odor. This proprietary formula is made with ultra-pure colloidal PLATINUM, GOLD, SILVER & COPPER. These precious earth elements eliminate body odor on contact. The unique spray application ensures the most hygienic experience compared to stick or roll-on products. Start your Mojave Myst journey and trust your deodorant again. Everybody is different. Depending on your body chemistry, Mojave Myst delivers up to 5 days of odor cancelling protection. This non-toxic, high performance spray deodorant delivers effortless and comfortable daily protection under the most extreme conditions. Although Mojave Myst contains no added fragrance, it does have a light and earthy coconut aroma from the natural distillation process.\nUP TO 5-DAY ODOR PROTECTION\nFOR ALL SKIN TYPES\nNON-TOXIC\nVEGAN\nCRUELTY FREE\nGENDER NEUTRAL\nNO ADDED FRAGRANCE",
+        "directions": "Shake well before use. Spray Mojave Myst molecular deodorant 6 inches away from a dry underarm area. Spray 3-4 times per arm. Product dries instantly and will not stain clothing or leave residue under the arms. FOR EXTERNAL USE ONLY. Not intended for use by children. Avoid the face and eyes. Discontinue use if skin irritation occurs. DO NOT use on freshly shaved skin or sensitive body areas.",
+        "ingredients": {
+          "1": "Purified Water",
+          "2": "Certified Organic Coconut Alcohol (Ethyl Alcohol 95%)",
+          "3": "Colloids of .999 Pure Platinum",
+          "4": ".999 Pure Gold",
+          "5": ".999 Pure Silver",
+          "6": ".999 Pure Copper",
+          "7": "Glycerin, Citric Acid"
+        },
+        "price": 35.0,
+        "color": null,
+        "weight": null,
+        "volume": "2.0 fl oz, 60 ml"
+      },
+      "ratings": [4, 5, 5, 4, 5, 5, 5, 4, 3, 5, 5, 3, 5, 4, 4, 5, 5],
+      "reviews": []
+    },
+    "2": {
+      "name": "deodorant_spray_guava",
+      "id": 11111,
+      "image": "https://www.mojavemyst.com/cdn/shop/products/4-1-ProductPurchase-PHOTOS_1200x.jpg?v=1632249914",
+      "price": 40.0,
+      "details": {
+        "description": "Mojave Myst is a fine mist spray deodorant that delivers multi-day body odor protection you can trust. Formulated in the Mojave Desert, one of the hottest, extreme and beautiful environments on earth.  Mojave Myst’s trademark ODOR CANCELLING TECHNOLOGY is a patent-pending deodorant that effectively neutralizes body odor. This proprietary formula is made with ultra-pure colloidal PLATINUM, GOLD, SILVER & COPPER. These precious earth elements eliminate body odor on contact. The unique spray application ensures the most hygienic experience compared to stick or roll-on products. Start your Mojave Myst journey and trust your deodorant again. Everybody is different. Depending on your body chemistry, Mojave Myst delivers up to 5 days of odor cancelling protection. This non-toxic, high performance spray deodorant delivers effortless and comfortable daily protection under the most extreme conditions. Although Mojave Myst contains no added fragrance, it does have a light and earthy coconut aroma from the natural distillation process.\nUP TO 5-DAY ODOR PROTECTION\nFOR ALL SKIN TYPES\nNON-TOXIC\nVEGAN\nCRUELTY FREE\nGENDER NEUTRAL\nNO ADDED FRAGRANCE",
+        "directions": "Shake well before use. Spray Mojave Myst molecular deodorant 6 inches away from a dry underarm area. Spray 3-4 times per arm. Product dries instantly and will not stain clothing or leave residue under the arms. FOR EXTERNAL USE ONLY. Not intended for use by children. Avoid the face and eyes. Discontinue use if skin irritation occurs. DO NOT use on freshly shaved skin or sensitive body areas.",
+        "ingrediants": {
+          "1": "Purified Water",
+          "2": "Certified Organic Coconut Alcohol (Ethyl Alcohol 95%)",
+          "3": "Colloids of .999 Pure Platinum",
+          "4": ".999 Pure Gold",
+          "5": ".999 Pure Silver",
+          "6": ".999 Pure Copper",
+          "7": "Glycerin, Citric Acid"
+        },
+        "color": null
+      },
+      "weight": null,
+      "volume": "2.0 fl oz, 60 ml"
+    },
+    "3": {
+      "name": "poop_spray_guava",
+      "id": 11112,
+      "image": "https://www.mojavemyst.com/cdn/shop/products/4-1-ProductPurchase-PHOTOS_1200x.jpg?v=1632249914",
+      "price": 45.0,
+      "details": {
+        "description": "Mojave Poopster is a fine mist spray deodorant that delivers multi-day body odor protection you can trust. Formulated in the Mojave Desert, one of the hottest, extreme and beautiful environments on earth.  Mojave Myst’s trademark ODOR CANCELLING TECHNOLOGY is a patent-pending deodorant that effectively neutralizes body odor. This proprietary formula is made with ultra-pure colloidal PLATINUM, GOLD, SILVER & COPPER. These precious earth elements eliminate body odor on contact. The unique spray application ensures the most hygienic experience compared to stick or roll-on products. Start your Mojave Myst journey and trust your deodorant again. Everybody is different. Depending on your body chemistry, Mojave Myst delivers up to 5 days of odor cancelling protection. This non-toxic, high performance spray deodorant delivers effortless and comfortable daily protection under the most extreme conditions. Although Mojave Myst contains no added fragrance, it does have a light and earthy coconut aroma from the natural distillation process.\nUP TO 5-DAY ODOR PROTECTION\nFOR ALL SKIN TYPES\nNON-TOXIC\nVEGAN\nCRUELTY FREE\nGENDER NEUTRAL\nNO ADDED FRAGRANCE",
+        "directions": "Shake well before use. Spray Mojave Myst molecular deodorant 6 inches away from a dry underarm area. Spray 3-4 times per arm. Product dries instantly and will not stain clothing or leave residue under the arms. FOR EXTERNAL USE ONLY. Not intended for use by children. Avoid the face and eyes. Discontinue use if skin irritation occurs. DO NOT use on freshly shaved skin or sensitive body areas.",
+        "ingrediants": {
+          "1": "Purified Water",
+          "2": "Certified Organic Coconut Alcohol (Ethyl Alcohol 95%)",
+          "3": "Colloids of .999 Pure Platinum",
+          "4": ".999 Pure Gold",
+          "5": ".999 Pure Silver",
+          "6": ".999 Pure Copper",
+          "7": "Glycerin, Citric Acid"
+        },
+        "color": null
+      },
+      "weight": null,
+      "volume": "2.0 fl oz, 60 ml"
+    },
+    "4": {
+      "name": "deodorant_spray_guava",
+      "id": 11113,
+      "image": "https://www.mojavemyst.com/cdn/shop/products/4-1-ProductPurchase-PHOTOS_1200x.jpg?v=1632249914",
+      "price": 50.0,
+      "details": {
+        "description": "Mojave Myst is a fine mist spray deodorant that delivers multi-day body odor protection you can trust. Formulated in the Mojave Desert, one of the hottest, extreme and beautiful environments on earth.  Mojave Myst’s trademark ODOR CANCELLING TECHNOLOGY is a patent-pending deodorant that effectively neutralizes body odor. This proprietary formula is made with ultra-pure colloidal PLATINUM, GOLD, SILVER & COPPER. These precious earth elements eliminate body odor on contact. The unique spray application ensures the most hygienic experience compared to stick or roll-on products. Start your Mojave Myst journey and trust your deodorant again. Everybody is different. Depending on your body chemistry, Mojave Myst delivers up to 5 days of odor cancelling protection. This non-toxic, high performance spray deodorant delivers effortless and comfortable daily protection under the most extreme conditions. Although Mojave Myst contains no added fragrance, it does have a light and earthy coconut aroma from the natural distillation process.\nUP TO 5-DAY ODOR PROTECTION\nFOR ALL SKIN TYPES\nNON-TOXIC\nVEGAN\nCRUELTY FREE\nGENDER NEUTRAL\nNO ADDED FRAGRANCE",
+        "directions": "Shake well before use. Spray Mojave Myst molecular deodorant 6 inches away from a dry underarm area. Spray 3-4 times per arm. Product dries instantly and will not stain clothing or leave residue under the arms. FOR EXTERNAL USE ONLY. Not intended for use by children. Avoid the face and eyes. Discontinue use if skin irritation occurs. DO NOT use on freshly shaved skin or sensitive body areas.",
+        "ingrediants": {
+          "1": "Purified Water",
+          "2": "Certified Organic Coconut Alcohol (Ethyl Alcohol 95%)",
+          "3": "Colloids of .999 Pure Platinum",
+          "4": ".999 Pure Gold",
+          "5": ".999 Pure Silver",
+          "6": ".999 Pure Copper",
+          "7": "Glycerin, Citric Acid"
+        },
+        "color": null
+      },
+      "weight": null,
+      "volume": "2.0 fl oz, 60 ml"
+    },
+    "5": {
+      "name": "deodorant_spray_guava",
+      "id": 11114,
+      "image": "https://www.mojavemyst.com/cdn/shop/products/4-1-ProductPurchase-PHOTOS_1200x.jpg?v=1632249914",
+      "price": 55.0,
+      "details": {
+        "description": "Mojave Myst is a fine mist spray deodorant that delivers multi-day body odor protection you can trust. Formulated in the Mojave Desert, one of the hottest, extreme and beautiful environments on earth.  Mojave Myst’s trademark ODOR CANCELLING TECHNOLOGY is a patent-pending deodorant that effectively neutralizes body odor. This proprietary formula is made with ultra-pure colloidal PLATINUM, GOLD, SILVER & COPPER. These precious earth elements eliminate body odor on contact. The unique spray application ensures the most hygienic experience compared to stick or roll-on products. Start your Mojave Myst journey and trust your deodorant again. Everybody is different. Depending on your body chemistry, Mojave Myst delivers up to 5 days of odor cancelling protection. This non-toxic, high performance spray deodorant delivers effortless and comfortable daily protection under the most extreme conditions. Although Mojave Myst contains no added fragrance, it does have a light and earthy coconut aroma from the natural distillation process.\nUP TO 5-DAY ODOR PROTECTION\nFOR ALL SKIN TYPES\nNON-TOXIC\nVEGAN\nCRUELTY FREE\nGENDER NEUTRAL\nNO ADDED FRAGRANCE",
+        "directions": "Shake well before use. Spray Mojave Myst molecular deodorant 6 inches away from a dry underarm area. Spray 3-4 times per arm. Product dries instantly and will not stain clothing or leave residue under the arms. FOR EXTERNAL USE ONLY. Not intended for use by children. Avoid the face and eyes. Discontinue use if skin irritation occurs. DO NOT use on freshly shaved skin or sensitive body areas.",
+        "ingrediants": {
+          "1": "Purified Water",
+          "2": "Certified Organic Coconut Alcohol (Ethyl Alcohol 95%)",
+          "3": "Colloids of .999 Pure Platinum",
+          "4": ".999 Pure Gold",
+          "5": ".999 Pure Silver",
+          "6": ".999 Pure Copper",
+          "7": "Glycerin, Citric Acid"
+        },
+        "color": null
+      },
+      "weight": null,
+      "volume": "2.0 fl oz, 60 ml"
+    }
+  },
+  "weekly_deals": {
+    "1": {
+      "product": "11111",
+      "percentage": 0.1,
+      "additional": null
+    },
+    "2": {
+      "product": "11113",
+      "percentage": 0.2,
+      "additional": "Get 3 months of Apple Music for free."
+    },
+    "3": {
+      "product": "11115",
+      "percentage": 0.05,
+      "additional": null
+    }
+  },
+  "new_products": [11110, 11111, 11114],
+  "featured_products": [11111, 11113, 11115]
+}

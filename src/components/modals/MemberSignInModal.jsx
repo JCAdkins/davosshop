@@ -3,9 +3,13 @@ import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import UserContext from "../../contexts/UserContext";
 import { Link } from "react-router-dom";
-import { signInWithEmailAndPassword } from "firebase/auth";
+import {
+  signInWithEmailAndPassword,
+  setPersistence,
+  inMemoryPersistence,
+} from "firebase/auth";
 import { auth } from "../../utils/firebase";
-import getUser from "../../services/geUser";
+import generateSessionCookie from "../../services/generateSessionCookie";
 
 const MemberSignInModal = (props) => {
   const [openModal, _] = useState("form-elements");
@@ -22,24 +26,26 @@ const MemberSignInModal = (props) => {
   } = useForm();
 
   const logInClick = async (creds) => {
-    signInWithEmailAndPassword(auth, creds.email, creds[`current-password`])
-      .then((userCredential) => {
-        // Signed in
-        logInAuthorized(userCredential.user);
-      })
+    setPersistence(auth, inMemoryPersistence)
+      .then(() =>
+        signInWithEmailAndPassword(
+          auth,
+          creds.email,
+          creds[`current-password`]
+        ).then(async (userCredential) => {
+          // Signed in
+          const idToken = await userCredential.user.getIdToken();
+          const sessionCookie = await generateSessionCookie(idToken);
+          if (sessionCookie.error) {
+            props.setError(sessionCookie.error);
+          }
+          props.resetModal();
+        })
+      )
       .catch((error) => {
         logInDenied();
         console.log(error);
       });
-  };
-
-  const logInAuthorized = (u) => {
-    getUser(u.email).then((data) => {
-      data.forEach((signInUser) => {
-        setUser({ ...signInUser.data() });
-      });
-    });
-    props.resetModal();
   };
 
   const logInDenied = () => {

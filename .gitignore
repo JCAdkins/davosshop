@@ -17,8 +17,10 @@ storage.rules
 firestore.rules
 firestore.indexes.json
 firebase.json
-db.json
 .firebase
+firestore-debug.log
+pubsub-debug.log
+ui-debug.log
 
 # Editor directories and files
 .vscode/*
@@ -30,3 +32,5 @@ db.json
 *.njsproj
 *.sln
 *.sw?
+.env.local
+

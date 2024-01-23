@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Button, Carousel } from "flowbite-react";
+import { Carousel as MaterialCarousel } from "@material-tailwind/react";
 import FlexWrapContainer from "../components/containers/FlexWrapContainer";
 import FlexWrapCard from "../components/cards/FlexWrapCard";
 import "../customcss/custom.css";
@@ -8,7 +9,7 @@ import mensImage from "../assets/images/mens_apparel.webp";
 import NoisyImage from "../components/NoisyImage";
 import LoadingPage from "../components/LoadingPage";
 
-const Main = ({ setSignInModal }) => {
+const Main = () => {
   const [loading, setLoading] = useState("true");
   const [boxShadow, setBoxShadow] = useState();
   const [main_outer, setMain_Outer] = useState();
@@ -18,8 +19,6 @@ const Main = ({ setSignInModal }) => {
   );
   const mainOuterRef = useRef();
   let rectTop;
-  let loadScale = 1;
-  let dScale = 0.1;
 
   const weeklyDeals = [
     {
@@ -240,7 +239,6 @@ const Main = ({ setSignInModal }) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading();
-      setSignInModal("true");
     }, 5000);
     window.addEventListener("scroll", updateRectTop);
     return () => window.removeEventListener("scroll", updateRectTop);
@@ -274,45 +272,123 @@ const Main = ({ setSignInModal }) => {
                   </div>
                 </div>
               </div>
-              <div className="main-overlay-right flex flex-col col-span-2 h-full overflow-y-auto bg-white/40">
-                <div className="main-inner-overlay-right flex flex-col w-full h-full items-center p-6">
-                  <div className="main-inner-overlay-header sticky top-6 backdrop-blur-lg left-0 h-fit w-fit text-3xl text-center text-black px-4 z-10 border-y border-black">
-                    <p className="">WEEKLY DEALS</p>
-                  </div>
-                  <FlexWrapContainer>
-                    {weeklyDeals.map((deal, index) => (
-                      <FlexWrapCard
-                        className="border-none hover:shadow-md hover:shadow-app_accent-900"
-                        key={index}
-                        image={deal.images[0]}
+              <div className="main-overlay-right flex flex-col overflow-y-auto col-span-2 h-full bg-white/40">
+                <MaterialCarousel className="relative">
+                  <div className="main-inner-overlay-right flex flex-col items-center justify-evenly w-full h-full">
+                    <h1 className="text-3xl text-gray-800">
+                      Spread Joy: Support Needy Kids at Davos!
+                    </h1>
+                    <p className="text-xl text-black leading-[50px] text-justify p-14 -mt-10">
+                      Here at Davos, we believe in the magic of giving. Help us
+                      bring smiles to the faces of needy kids throughout the
+                      year of 2024. Your donation can make a world of
+                      difference.{" "}
+                      <span
+                        className="underline text-bold hover:cursor-pointer"
+                        onClick={() =>
+                          console.log(
+                            "Need to go to donation page or bring up donation modal."
+                          )
+                        }
                       >
-                        <h5 className="text-lg font-bold leading-5 tracking-tight text-black bg-white h-full w-full border-none dark:text-white">
-                          <div>{deal.name}</div>
-                        </h5>
-                        <div className="flex-col w-full text-black text-md">
-                          <div className="flex justify-between">
-                            <div className="flex whitespace-pre gap-1">
-                              <div className="line-through">${deal.price}</div>
-                              <div className="text-red-500">
-                                ${(deal.price * (1 - deal.discount)).toFixed(2)}
+                        Click to donate now
+                      </span>
+                      ! #DavosCares
+                    </p>
+                  </div>
+                  <div className="main-inner-overlay-right flex flex-col w-full h-full items-center p-6 overflow-y-auto">
+                    <div className="main-inner-overlay-header sticky top-0 backdrop-blur-lg left-0 h-fit w-fit text-3xl text-center text-black px-4 z-10 border-y border-black">
+                      <p className="">WEEKLY DEALS</p>
+                    </div>
+                    <FlexWrapContainer>
+                      {weeklyDeals.map((deal, index) => (
+                        <FlexWrapCard
+                          className="w-[30ch] h-full flex flex-col p-6"
+                          cardClassName="border-none hover:shadow-md hover:shadow-app_accent-900"
+                          key={index}
+                          image={deal.images[0]}
+                        >
+                          <h5 className="text-lg font-bold leading-5 tracking-tight text-black bg-white h-full w-full border-none dark:text-white">
+                            <div>{deal.name}</div>
+                          </h5>
+                          <div className="flex-col w-full text-black text-md">
+                            <div className="flex justify-between">
+                              <div className="flex whitespace-pre gap-1">
+                                <div className="line-through">
+                                  ${deal.price}
+                                </div>
+                                <div className="text-red-500">
+                                  $
+                                  {(deal.price * (1 - deal.discount)).toFixed(
+                                    2
+                                  )}
+                                </div>
                               </div>
+                              <div>{deal.discount * 100}% Off</div>
                             </div>
-                            <div>{deal.discount * 100}% Off</div>
                           </div>
-                        </div>
-                        <div className="flex items-end justify-center h-full">
-                          <Button
-                            onClick={() => console.log(deal.name + " clicked.")}
-                            className="bg-app_accent-900 w-full"
-                            size="xs"
-                          >
-                            Purchase
-                          </Button>
-                        </div>
-                      </FlexWrapCard>
-                    ))}
-                  </FlexWrapContainer>
-                </div>
+                          <div className="flex items-end justify-center h-full">
+                            <Button
+                              onClick={() =>
+                                console.log(deal.name + " clicked.")
+                              }
+                              className="bg-app_accent-900 w-full"
+                              size="xs"
+                            >
+                              Purchase
+                            </Button>
+                          </div>
+                        </FlexWrapCard>
+                      ))}
+                    </FlexWrapContainer>
+                  </div>
+                  <div className="main-inner-overlay-right flex flex-col w-full h-full items-center p-6 overflow-y-auto">
+                    <div className="main-inner-overlay-header sticky top-0 backdrop-blur-lg left-0 h-fit w-fit text-3xl text-center text-black px-4 z-10 border-y border-black">
+                      <p className="">MONTHLY DEALS</p>
+                    </div>
+                    <FlexWrapContainer>
+                      {weeklyDeals.map((deal, index) => (
+                        <FlexWrapCard
+                          className="w-[30ch] flex flex-col p-6"
+                          cardClassName="border-none hover:shadow-md hover:shadow-app_accent-900"
+                          key={index}
+                          image={deal.images[0]}
+                        >
+                          <h5 className="text-lg font-bold leading-5 tracking-tight text-black bg-white h-full w-full border-none dark:text-white">
+                            <div>{deal.name}</div>
+                          </h5>
+                          <div className="flex-col w-full text-black text-md">
+                            <div className="flex justify-between">
+                              <div className="flex whitespace-pre gap-1">
+                                <div className="line-through">
+                                  ${deal.price}
+                                </div>
+                                <div className="text-red-500">
+                                  $
+                                  {(deal.price * (1 - deal.discount)).toFixed(
+                                    2
+                                  )}
+                                </div>
+                              </div>
+                              <div>{deal.discount * 100}% Off</div>
+                            </div>
+                          </div>
+                          <div className="flex items-end justify-center h-full">
+                            <Button
+                              onClick={() =>
+                                console.log(deal.name + " clicked.")
+                              }
+                              className="bg-app_accent-900 w-full"
+                              size="xs"
+                            >
+                              Purchase
+                            </Button>
+                          </div>
+                        </FlexWrapCard>
+                      ))}
+                    </FlexWrapContainer>
+                  </div>
+                </MaterialCarousel>
               </div>
             </div>
           </div>
@@ -380,9 +456,15 @@ const Main = ({ setSignInModal }) => {
                 </div>
               </div>
               <div
-                className={`${carousel_transition} flex w-full min-w-[250px] max-w-[50%] px-8 h-full`}
+                className={`hidden sm:inline-block ${carousel_transition} flex w-full min-w-[250px] max-w-[50%] px-8 h-full`}
               >
-                <Carousel color="red" className="main_carousel">
+                <Carousel
+                  pauseOnHover={true}
+                  leftControl=" "
+                  rightControl=" "
+                  color="red"
+                  className="main_carousel"
+                >
                   {new_product_array}
                 </Carousel>
               </div>

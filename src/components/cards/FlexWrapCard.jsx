@@ -1,11 +1,11 @@
 import { Card } from "flowbite-react";
 import "../../customcss/custom.css";
 
-const FlexWrapCard = ({ image, className, children, ...props }) => {
+const FlexWrapCard = ({ image, cardClassName, children, ...props }) => {
   return (
-    <div className="w-[30ch] flex flex-col p-4" {...props}>
+    <div {...props}>
       <Card
-        className={`${className} flex-wrap-card flex`}
+        className={`${cardClassName} flex-wrap-card flex`}
         imgAlt="Image"
         imgSrc={image}
       >

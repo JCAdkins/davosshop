@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+const withMT = require("@material-tailwind/react/utils/withMT");
+export default withMT({
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -21,6 +22,7 @@ export default {
       },
       fontFamily: { dmserif: ["DM Serif Display", "serif"] },
       colors: {
+        success: "#6EE7B7",
         app_bg: "#dee2fc", // Lavenderish color
         app_main: "#c98d26", // Desertish Color
         // a bluish-greenish color; if change make sure to include all shades as they're used throughout app
@@ -42,4 +44,4 @@ export default {
     },
   },
   plugins: [require("flowbite/plugin")],
-};
+});
